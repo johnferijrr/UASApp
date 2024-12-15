@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/red_500"
+        android:textColor="@color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to UAS App"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:backgroundTint="@color/blue_500"
+        android:textColor="@color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- New Horizontal Layout for Fetch Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnFetchWithLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch Limited Data"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/teal_500"
+            android:textColor="@color/white"
+            android:elevation="4dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp" />
+
+        <Button
+            android:id="@+id/btnFetchAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch All Data"
+            android:backgroundTint="@color/green_500"
+            android:textColor="@color/white"
+            android:elevation="4dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="@color/white" />
+</LinearLayout>
