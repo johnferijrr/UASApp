@@ -4,7 +4,7 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiService {
-//    @GET("sxNVU/user")
+    @GET("sxNVU/user")
     fun getUsers(): Call<List<User>>
 
     @GET("sxNVU/user")
